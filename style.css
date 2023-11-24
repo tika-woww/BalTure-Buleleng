@@ -3,6 +3,10 @@
 body{
   color: #ffffff;
   font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 a{
@@ -197,8 +201,8 @@ header:before{
 .header-title a{
   font-family: 'DM Sans', sans-serif;
   font-size: 1.2rem;
-  color: #ffffff;
   font-weight: 800;
+  color: #ffffff;
 }
 
 .btn-explore{
@@ -210,16 +214,17 @@ header:before{
 
 .btn-explore {
   padding: 0.5rem;
-  background: #000000;
+  margin: 7px 430px;
+  background: #176B87;
   color: #ffffff;
   font-weight: 500;
-  border-radius: 50px;
+  border-radius: 20px;
   transition: .3s;
   width: 12%;
 }
 
 .btn-explore:hover{
-  color: #000000;
+  color: #176B87;
   background: #ffffff;
 }
 
@@ -232,15 +237,11 @@ header:before{
 
 h2{
   padding-top: 10px;
+  font-size: 40px;
+  margin: -10px;
+  background-color: black;
 }
 
-.buleleng{
-  padding: 20px 50px;
-}
-
-p{
-  padding: 15px;
-}
 
 .yey{
   display: flex;
@@ -252,4 +253,250 @@ p{
   color: black;
   background-color:#e1e0e0;
   
+}
+
+.about-container{
+  width: 1000px;
+  margin: 20px 10px;
+}
+
+.image-gallery{
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.image-box{
+  width: 22%;
+  height: 260px;
+  position: relative;
+}
+
+.image-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.image-box:nth-child(odd){
+  align-self: flex-end;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 110%;
+  height: 260px;
+  background-color: rgba(0, 0, 0, 0.5); /* Warna overlay semi-transparan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Mulai dengan transparan */
+  transition: opacity 0.3s ease-in-out; /* Efek transisi untuk hover */
+}
+
+.image-box:hover .overlay{
+  opacity: 1;
+}
+
+.overlay p {
+  color: white;
+  font-size: 23px;
+  text-align: center;
+  margin: 20px;
+  font-weight: 600;
+}
+
+.about-info{
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0px 60px;
+  margin-bottom: 0px;
+}
+
+#kebudayaan{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gallery{
+  width: 100%;
+  background-color: black;
+
+}
+
+.gallery-container{
+  align-items: center;
+  display: flex;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+.gallery-item{
+  height: 200px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 330px;
+  z-index: 0;
+  border-radius: 15px ;
+  background-size: contain;
+}
+
+.gallery-item-1{
+  left: 15%;
+  opacity: .4;
+  transform: translateX(-50%);
+}
+
+.gallery-item-2{
+  height: 250px;
+  opacity: 0.8;
+  width: 380px;
+  z-index: 1;
+}
+
+.gallery-item-2{
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.gallery-item-3{
+  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
+  height: 300px;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 430px;
+  z-index: 2;
+}
+
+.gallery-item-4{
+  height: 250px;
+  opacity: 0.8;
+  width: 380px;
+  z-index: 1;
+  left: 70%;
+  transform: translateX(-50%);
+}
+
+.gallery-item-5{
+  left: 85%;
+  opacity: .4;
+  transform: translateX(-50%);
+}
+
+.gallery-controls{
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  height: 100px;
+}
+
+.gallery-controls button{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0 50px;
+  padding: 0 12px;
+  text-transform: capitalize;
+}
+
+.gallery-controls-button:focus{
+  outline: none;
+}
+
+.gallery-controls-previous{
+  position: relative;
+}
+
+.gallery-controls-previous::before{
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  left: -30px;
+  padding: 10px;
+  position: absolute;
+  top: 25%;
+  transform: rotate(335deg) translateY(-50%);
+  transition: left 0.35s ease-in-out;
+  width: 5px;
+}
+
+.gallery-controls-previous:hover::before{
+  left: -40px;
+}
+
+.gallery-controls-next{
+  position: relative;
+}
+
+.gallery-controls-next::before{
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  padding: 10px;
+  position: absolute;
+  right: -30px;
+  transform: rotate(-45deg) translateY(-50%);
+  transition: right 0.15s ease-in-out;
+  width: 5px;
+}
+
+.gallery-controls-next:hover::before{
+  right: -40px;
+}
+
+.gallery-nav{
+  bottom: -15%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.gallery nav li{
+  background: #ccc;
+  border-radius: 50%;
+  height: 10px;
+  margin: 0 16px;
+  width: 10px;
+}
+
+.gallery-nav li.gallery-item-selected{
+  background: #555;
+}
+
+h4{
+  background-color: black;
+  color: #64CCC5;
+  font-size: 40px;
+  margin: -5px;
+  padding: 30px 0px 0px 50px;
+}
+
+.penjelasan-kebudayaan{
+  background-color: black;
+  font-size: 16.5px;
+  margin: -5px;
+  padding: 10px 50px 0px 50px;
 }
