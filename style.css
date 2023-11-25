@@ -7,6 +7,7 @@ body{
   height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: #000000;
 }
 
 a{
@@ -329,163 +330,6 @@ h2{
   align-items: center;
 }
 
-.gallery{
-  width: 100%;
-  background-color: black;
-
-}
-
-.gallery-container{
-  align-items: center;
-  display: flex;
-  height: 400px;
-  margin: 0 auto;
-  max-width: 1000px;
-  position: relative;
-}
-
-.gallery-item{
-  height: 200px;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.3s ease-in-out;
-  width: 330px;
-  z-index: 0;
-  border-radius: 15px ;
-  background-size: contain;
-}
-
-.gallery-item-1{
-  left: 15%;
-  opacity: .4;
-  transform: translateX(-50%);
-}
-
-.gallery-item-2{
-  height: 250px;
-  opacity: 0.8;
-  width: 380px;
-  z-index: 1;
-}
-
-.gallery-item-2{
-  left: 30%;
-  transform: translateX(-50%);
-}
-
-.gallery-item-3{
-  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
-  height: 300px;
-  opacity: 1;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 430px;
-  z-index: 2;
-}
-
-.gallery-item-4{
-  height: 250px;
-  opacity: 0.8;
-  width: 380px;
-  z-index: 1;
-  left: 70%;
-  transform: translateX(-50%);
-}
-
-.gallery-item-5{
-  left: 85%;
-  opacity: .4;
-  transform: translateX(-50%);
-}
-
-.gallery-controls{
-  display: flex;
-  justify-content: center;
-  margin: 0px 0;
-  height: 100px;
-}
-
-.gallery-controls button{
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  font-size: 30px;
-  margin: 0 50px;
-  padding: 0 12px;
-  text-transform: capitalize;
-}
-
-.gallery-controls-button:focus{
-  outline: none;
-}
-
-.gallery-controls-previous{
-  position: relative;
-}
-
-.gallery-controls-previous::before{
-  border: solid #000;
-  border-width: 0 5px 5px 0;
-  content: '';
-  display: inline-block;
-  height: 5px;
-  left: -30px;
-  padding: 10px;
-  position: absolute;
-  top: 25%;
-  transform: rotate(335deg) translateY(-50%);
-  transition: left 0.35s ease-in-out;
-  width: 5px;
-}
-
-.gallery-controls-previous:hover::before{
-  left: -40px;
-}
-
-.gallery-controls-next{
-  position: relative;
-}
-
-.gallery-controls-next::before{
-  border: solid #000;
-  border-width: 0 5px 5px 0;
-  content: '';
-  display: inline-block;
-  height: 5px;
-  padding: 10px;
-  position: absolute;
-  right: -30px;
-  transform: rotate(-45deg) translateY(-50%);
-  transition: right 0.15s ease-in-out;
-  width: 5px;
-}
-
-.gallery-controls-next:hover::before{
-  right: -40px;
-}
-
-.gallery-nav{
-  bottom: -15%;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.gallery nav li{
-  background: #ccc;
-  border-radius: 50%;
-  height: 10px;
-  margin: 0 16px;
-  width: 10px;
-}
-
-.gallery-nav li.gallery-item-selected{
-  background: #555;
-}
-
 h4{
   background-color: black;
   color: #64CCC5;
@@ -503,7 +347,6 @@ h4{
 
 h1{
   color: #64CCC5;
-  background-color: black;
   margin: -10px;
   padding: 30px 0px 0px 50px;
   font-size: 40px;
@@ -524,7 +367,7 @@ h1{
 }
 
 .item {
-  width: 220px;
+  width: 240px;
   height: 220px;
   padding: 1rem;
   font-weight: bold;
@@ -556,7 +399,7 @@ h1{
 }
 
 .item-1-in-div-item-3 {
-  width: 93%;
+  width: 84%;
   
 }
 
@@ -567,7 +410,7 @@ h1{
 }
 
 .item-1-solo {
-  width: 30%;
+  width: 40%;
   height: 81vh;
 }
 
@@ -580,7 +423,7 @@ h1{
 .lokasi1{
   position:relative;
   bottom: 45px;
-  left: 10px;
+  left: 3px;
   width: 80%;
   height: 0px;
   display: flex;
@@ -593,7 +436,7 @@ h1{
 .lokasi2{
   position: relative;
   bottom: 60px;
-  right: 80px;
+  right: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -603,7 +446,7 @@ h1{
 .lokasi3{
   position: relative;
   bottom: 55px;
-  right: 135px;
+  right: 155px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -613,7 +456,7 @@ h1{
 .lokasi4{
   position: relative;
   bottom: 55px;
-  right: 10px;
+  right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -654,10 +497,133 @@ h1{
   opacity: 0;
 }
 
-.item-1-solo:hover .penjelasan-lokasi1{
+.penjelasan-lokasi2{
+  position: relative;
+  width: 90%;
+  height: 300px;
+  font-size: 18px;
+  bottom: 550px;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px 3px #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 200px 20px 0 20px;
+}
+
+.item-1-solo:hover .penjelasan-lokasi2{
   opacity: 1;
 }
 
 .item-1-solo:hover .lokasi2{
   opacity: 0;
+}
+
+.penjelasan-lokasi3{
+  position: relative;
+  width: 95%;
+  height: 150px;
+  font-size: 15px;
+  bottom: 285px;
+  border-radius: 15px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px 3px #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 100px 20px 0px 20px;
+}
+
+.item-1-in-div-item-3:hover .penjelasan-lokasi3{
+  opacity: 1;
+}
+
+.item-1-in-div-item-3:hover .lokasi3{
+  opacity: 0;
+}
+
+.penjelasan-lokasi4{
+  position: relative;
+  width: 84%;
+  height: 200px;
+  font-size: 13.5px;
+  bottom: 285px;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px 3px #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 60px 20px 0 20px;
+}
+
+.item-1:hover .penjelasan-lokasi4{
+  opacity: 1;
+}
+
+.item-1:hover .lokasi4{
+  opacity: 0;
+}
+
+.item-2:hover .penjelasan-lokasi4{
+  opacity: 1;
+}
+
+.item-2:hover .lokasi4{
+  opacity: 0;
+}
+
+.conteudo{
+  width: 100%;
+}
+
+.carrousel{
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: mandatory;
+  scrollbar-width: none;
+  background-color: #000000;
+  margin: 40px;
+}
+
+.carrousel::-webkit-scrollbar{
+  display: none;
+}
+
+.card{
+  scroll-snap-align: start;
+  border-radius: 30px;
+  height: 300px;
+  width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:nth-child(1) {
+  background: url(photo/gebug-ende.png);
+}
+
+.card:nth-child(even) {
+  background: linear-gradient(-222deg, #000000, #ffffff);
+}
+
+.card h1{
+  color: #ffffff;
+  text-shadow: 2px 2px 3px #04364A;
+  padding: 0px 150px 220px 0px;
+  
 }
